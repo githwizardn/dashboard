@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>მთავარი — TBC ბანკი</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-top">
+      <div class="logo"  aria-label="TBC ბანკი"> <img src="assets/Logo-ka-inner.svg" alt=""></div>
+      <div class="profile" aria-label="პროფილი">
+        <span class="profile-name">ნოდარი </span>
+        <span class="profile-icon">👤</span>
+        <button class="logout-btn" aria-label="გამოსვლა">↻</button>
+      </div>
+    </div>
+    <div class="nav-bottom">
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-btn" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="main-nav" aria-label="მთავარი მენიუ">
+        <a href="index.html" class="active">მთავარი</a>
+        <a href="#">ჩემი პროდუქტები</a>
+        <a href="#">გადარიცხვები</a>
+        <a href="transactions.html">ტრანზაქციები</a>
+        <a href="#">ჩემი ფინანსები</a>
+        <a href="#">შეთავაზებები</a>
+      </nav>
+      <div class="nav-actions" aria-label="ქმედებები">
+        <button class="icon-btn" aria-label="ჩათი">💬</button>
+        <button class="icon-btn" aria-label="ელ.ფოსტა">✉️</button>
+        <button class="icon-btn" aria-label="პარამეტრები">⚙️</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN GRID LAYOUT -->
+  <main class="container main-layout">
+
+    <!-- LEFT COLUMN -->
+    <section class="left-panel">
+
+      <!-- PROMO -->
+      <article class="promo-box card" aria-labelledby="promo-title">
+        <img src="assets/a889ba13e19e485b8c6d94f5d90e0b34.png" alt="პრომო შეთავაზება" class="promo-img">
+        <div class="promo-text">
+          <h2 id="promo-title">სამომხმარებლო სესხი</h2>
+          <p>გაიფორმეთ სესხი საუკეთესო პირობებით 18%-დან</p>
+        </div>
+      </article>
+
+      <!-- ACCOUNTS -->
+      <div class="accounts-container">
+        <div class="accounts-summary card" aria-labelledby="acc-title">
+          <h3 id="acc-title">ანგარიშები</h3>
+          <p class="balance">3 806,24 ₾</p>
+          <p class="muted">სულ ხელმისაწვდომია</p>
+        </div>
+        <div class="accounts-list card" aria-label="ანგარიშების სია">
+          <ul class="account-list">
+            <li class="account-item">
+              <img src="assets/BLACK_SAND_MC_GOLD_vertical.png" alt="MC GOLD" class="card-icon">
+              <div class="account-details"><span>MC GOLD</span><span>0.00 ₾</span></div>
+              <span class="account-action">›</span>
+            </li>
+            <li class="account-item">
+              <img src="assets/TBC CARD VISA GOLD.png"TBC CARD" class="card-icon">
+              <div class="account-details"><span>TBC CARD</span><span>106.24 ₾</span></div>
+              <span class="account-action">›</span>
+            </li>
+            <li class="account-item">
+              <img src="assets/icon-budget-blue.png" alt="ჩემი ანგარიში" class="card-icon">
+              <div class="account-details"><span>ჩემი ანგარიში</span><span>3 700.00 ₾</span></div>
+              <span class="account-action">›</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- RECENT TRANSACTIONS -->
+      <section class="transactions-box card" aria-labelledby="recent-title">
+        <h3 id="recent-title">ბოლო ტრანზაქციები</h3>
+        <ul class="transaction-list">
+          <li class="transaction-item">
+            <time class="transaction-date">13 ივლ 2025</time>
+            <span class="transaction-desc">Glovo Prime</span>
+            <span class="transaction-amount negative">− 8.99 ₾</span>
+          </li>
+          <li class="transaction-item">
+            <time class="transaction-date">13 ივლ 2025</time>
+            <span class="transaction-desc">Vip Pay “YANDEX.GO › Tbilisi”</span>
+            <span class="transaction-amount negative">−6.40 ₾</span>
+          </li>
+          <li class="transaction-item">
+            <time class="transaction-date">12 ივლ 2025</time>
+            <span class="transaction-desc">EGREVE.BOG.GE › TBILISI</span>
+            <span class="transaction-amount negative">−81.00 ₾</span>
+          </li>
+          <li class="transaction-item">
+            <time class="transaction-date">11 ივლ 2025</time>
+            <span class="transaction-desc">TBCBank – გადარიცხვა</span>
+            <span class="transaction-amount negative">−15.00 ₾</span>
+          </li>
+          <li class="transaction-item">
+            <time class="transaction-date">10 ივლ 2025</time>
+            <span class="transaction-desc">TBCBank – შეტანა</span>
+            <span class="transaction-amount positive">+100.00 ₾</span>
+          </li>
+        </ul>
+      </section>
+
+    </section>
+
+    <!-- RIGHT COLUMN -->
+    <aside class="right-panel">
+
+      <!-- CURRENCY RATES -->
+      <section class="rates-box card" aria-labelledby="rates-title">
+        <h4 id="rates-title">ვალუტის კურსები</h4>
+        <ul>
+          <li>🇺🇸 USD – 2.7160 ⬇ 0.0014</li>
+          <li>🇪🇺 EUR – 3.1753 ⬇ 0.0122</li>
+          <li>🇬🇧 GBP – 3.6772 ⬇ 0.0193</li>
+        </ul>
+      </section>
+
+      <!-- LOYALTY POINTS -->
+      <section class="loyalty-box card" aria-labelledby="loyalty-title">
+        <h4 id="loyalty-title">ერთგული ქულები</h4>
+        <p><strong>6.15</strong> ქულა (~6.15 ₾)</p>
+        <a href="#" class="detail-link">დეტალურად ›</a>
+      </section>
+
+      <!-- PENSION SAVINGS -->
+      <section class="pension-box card" aria-labelledby="pension-title">
+        <h4 id="pension-title">საპენსიო დანაზოგი</h4>
+        <p><strong>3 219.72 ₾</strong></p>
+        <a href="#" class="detail-link">დეტალურად ›</a>
+      </section>
+
+      <!-- SPENDING CHART -->
+      <section class="chart-box card" aria-labelledby="chart-title">
+        <h4 id="chart-title">ფულადი ბრუნვა</h4>
+        <div class="donut-chart" role="img" aria-label="Spending chart"></div>
+        <p class="chart-total">823.23 ₾</p>
+        <ul class="chart-legend">
+          <li><span class="dot orange"></span>სასურსათო – 212.02 ₾</li>
+          <li><span class="dot pink"></span>გასართობი – 167.00 ₾</li>
+          <li><span class="dot orange"></span>ტრანსპორტი – 155.89 ₾</li>
+          <li><span class="dot black"></span>სხვა – 272.07 ₾</li>
+        </ul>
+        <button class="offer-button">სხვა შეთავაზებები</button>
+      </section>
+
+    </aside>
+
+  </main>
+
+  <!-- MOBILE BOTTOM NAV -->
+  <nav class="mobile-nav" aria-label="მობილური მთავარი მენიუ">
+    <a href="index.html" class="active"><span class="icon">🏠</span>მთავარი</a>
+    <a href="#"><span class="icon">📦</span>პროდუქტები</a>
+    <a href="#"><span class="icon">🔄</span>გადარიცხვა</a>
+    <a href="transactions.html"><span class="icon">📑</span>ტრანზაქციები</a>
+    <a href="#"><span class="icon">📊</span>ფინანსები</a>
+    <a href="#"><span class="icon">🎁</span>შეთავაზებები</a>
+  </nav>
+
+</body>
+</html>

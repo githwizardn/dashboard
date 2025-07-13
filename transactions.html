@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>ტრანზაქციები — TBC ბანკი</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-top">
+      <div class="logo"  aria-label="TBC ბანკი"> <img src="assets/Logo-ka-inner.svg" alt=""></div>
+      <div class="profile">
+        <span class="profile-name">ნოდარი </span>
+        <span class="profile-icon">👤</span>
+        <button class="logout-btn">↻</button>
+      </div>
+    </div>
+    <div class="nav-bottom">
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-btn"><span></span><span></span><span></span></label>
+      <nav class="main-nav">
+        <a href="index.html">მთავარი</a>
+        <a href="#">ჩემი პროდუქტები</a>
+        <a href="#">გადარიცხვები</a>
+        <a href="transactions.html" class="active">ტრანზაქციები</a>
+        <a href="#">ჩემი ფინანსები</a>
+        <a href="#">შეთავაზებები</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn">💬</button>
+        <button class="icon-btn">✉️</button>
+        <button class="icon-btn">⚙️</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECONDARY NAV -->
+  <nav class="secondary-nav" aria-label="ქვე მენიუ">
+    <a href="transactions.html" class="active">ტრანზაქციები</a>
+    <a href="#">ამონაწერი</a>
+    <a href="#">დავალიანებები</a>
+  </nav>
+
+  <!-- NOTE: transactions-main class forces search above table on desktop -->
+  <main class="container transactions-main">
+
+    <!-- SEARCH + FILTER -->
+    <section class="toolbar-card card">
+      <div class="tx-toolbar">
+        <input type="search" placeholder="ძიება თარიღით, აღწერით ან თანხით">
+        <button class="filter-btn">ფილტრი</button>
+      </div>
+    </section>
+
+    <!-- TRANSACTIONS TABLE -->
+    <section class="transaction-list-container card">
+      <div class="table-header">
+        <div>თარიღი</div>
+        <div>აღწერა</div>
+        <div>კატეგორია</div>
+        <div>ანგარიში</div>
+        <div>თანხა</div>
+      </div>
+
+      <!-- sample rows -->
+      <div class="transaction-row">
+        <div class="transaction-date"><span class="status-icon">🔒</span>13 ივლ 2025</div>
+        <div class="transaction-desc">Glovo Prime</div>
+        <div class="transaction-category">
+          <span class="category-icon cat-subscription">⏳</span> გამოწერა
+        </div>
+        <div class="transaction-account">GE78…0064</div>
+        <div class="transaction-amount negative">−8.99 ₾</div>
+      </div>
+
+      <div class="transaction-row">
+        <div class="transaction-date"><span class="status-icon">🔒</span>13 ივლ 2025</div>
+        <div class="transaction-desc">Vip Pay “YANDEX.GO › Tbilisi GE”</div>
+        <div class="transaction-category">
+          <span class="category-icon cat-other">…</span> სხვა
+        </div>
+        <div class="transaction-account">GE78…0064</div>
+        <div class="transaction-amount negative">−6.40 ₾</div>
+      </div>
+
+      <div class="transaction-row">
+        <div class="transaction-date"><span class="status-icon">✅</span>13 ივლ 2025</div>
+        <div class="transaction-desc">TBCBank-ის VISA ტრანზაქცია</div>
+        <div class="transaction-category">
+          <span class="category-icon cat-home">🏠</span> კომუნალური
+        </div>
+        <div class="transaction-account">GE78…0064</div>
+        <div class="transaction-amount negative">−16.25 ₾</div>
+      </div>
+
+      <div class="transaction-row">
+        <div class="transaction-date"><span class="status-icon">✅</span>13 ივლ 2025</div>
+        <div class="transaction-desc">დეპოზიტორი ბანკთან H2H</div>
+        <div class="transaction-category">
+          <span class="category-icon cat-other">…</span> სხვა
+        </div>
+        <div class="transaction-account">GE78…0064</div>
+        <div class="transaction-amount negative">−1.00 ₾</div>
+      </div>
+
+      <div class="transaction-row">
+        <div class="transaction-date"><span class="status-icon">✅</span>13 ივლ 2025</div>
+        <div class="transaction-desc">თიბისი ბანკის VISA ტრანზაქცია</div>
+        <div class="transaction-category">
+          <span class="category-icon cat-shopping">🛒</span> რესტორანი, ყავა
+        </div>
+        <div class="transaction-account">GE78…0064</div>
+        <div class="transaction-amount negative">−9.80 ₾</div>
+      </div>
+
+      <div class="transaction-row">
+        <div class="transaction-date"><span class="status-icon">✅</span>13 ივლ 2025</div>
+        <div class="transaction-desc">თიბისი ბანკის VISA ტრანზაქცია</div>
+        <div class="transaction-category">
+          <span class="category-icon cat-transport">🚖</span> ტაქსი
+        </div>
+        <div class="transaction-account">GE78…0064</div>
+        <div class="transaction-amount negative">−11.00 ₾</div>
+      </div>
+
+      <!-- add more rows as needed -->
+
+    </section>
+
+  </main>
+
+  <!-- MOBILE BOTTOM NAV -->
+  <nav class="mobile-nav" aria-label="მობილური მთავარი მენიუ">
+    <a href="index.html"><span class="icon">🏠</span>მთავარი</a>
+    <a href="#"><span class="icon">📦</span>პროდუქტები</a>
+    <a href="#"><span class="icon">🔄</span>გადარიცხვა</a>
+    <a href="transactions.html" class="active"><span class="icon">📑</span>ტრანზაქციები</a>
+    <a href="#"><span class="icon">📊</span>ფინანსები</a>
+    <a href="#"><span class="icon">🎁</span>შეთავაზებები</a>
+  </nav>
+
+</body>
+</html>
